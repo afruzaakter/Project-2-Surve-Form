@@ -1,0 +1,95 @@
+
+  /* project-2 start */
+  body{
+    font-family: 'Lato', 'Lucida'
+  }
+  .main{
+    background-image: url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: #ffffff;
+    overflow-y: scroll;
+    font-size: 24px;
+  }
+  .main::after{
+    content: "";
+    background-color: rgba(58, 58, 158, 0.8);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .main > h1, .main > p{
+    text-align: center;
+    z-index: 2;
+    position: relative;
+    font-family: 35px;
+  }
+  .main-content{
+    background-color: rgb(27,27,50,0.9);
+    max-width: 650px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    z-index: 2;
+    position: relative;
+    box-shodow: 0px -1px 10px 5px purple;
+  }
+  #name, #email, #number, #dropdown, #comment {
+    display: flex;
+    flex-direction: coloum;
+    justify-content: center;
+    aline-item: center;
+    width: 100%;
+    height: 35px;
+    padding: 5px 10px;
+    color: #000000;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-bottom: 40px;
+    background-color: #ffffff;
+
+  }
+  #dropdown{
+      height: 47px;
+      padding: 5px 5px;
+      width: 104%;
+      color: #000000;
+      font-size: 20px;
+      margin-bottom: 40px;
+      background-color: #ffffff;
+  }
+
+  label[for=name],
+label[for=email],
+label[for=number],
+label[for=dropdown],
+label[for=comment]{
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+#submit{
+    width: 104%;
+    height: 55px;
+    border-radius: 5px;
+    background: #37af65;
+    border: none;
+    color: inherit;
+    font-family: inherit;
+    line-height: inherit;
+    font-size: 24px;
+  }
+#comment{
+    min-height: 120px;
+    width: 100%;
+    padding: 0.625rem;
+    resize: vertical;
+}
